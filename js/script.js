@@ -45,8 +45,10 @@
       inputArea.addEventListener('blur', ()=>{
 
         searchIcon.classList.toggle("active");
+        btnCancel.classList.remove("active")
         // menggembalikan placeholder saat blur
         inputArea.style.paddingLeft = "30px";
+        inputArea.value = "";
       });
 
       inputArea.addEventListener('focus', ()=>{
@@ -57,7 +59,11 @@
 
       // show btn cancel when user type in input area
       inputArea.addEventListener("input",()=>{
-        btnCancel.classList.toggle("active");
+        if (inputArea.value.trim() !== "") {
+          btnCancel.classList.add("active");
+        }else{
+          btnCancel.classList.remove("active");
+        }
       })
 
       // clear input when btn cancel is ckliked

@@ -113,13 +113,13 @@ body{
             right: 0;
             left: 0;
             background-color: white;
-            display: grid;
+            display: none;
             padding: 0 10px;
             padding-top: 5px;
 
             .search{
 
-                display: grid;
+                display: none;
                 grid-template-areas: 
                 "header"
                 "trending"
