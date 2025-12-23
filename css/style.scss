@@ -236,9 +236,10 @@ body{
 
                     display: grid;
                     
-                    h2{
+                    h1{
                         color: black;
-                        font-weight: 200;
+                        font-weight: 100;
+                        font-size: 1.1rem;
                     }
 
                     .trend{
@@ -295,9 +296,10 @@ body{
                     grid-template-columns: 1fr .01fr;
 
 
-                    h2{
+                    h1{
                         color: black;
-                        font-weight: 200;
+                        font-weight: 100;
+                        font-size: 1.1rem;
                     }
 
                     .title{

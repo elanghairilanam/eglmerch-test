@@ -192,9 +192,10 @@ body {
   grid-area: trending;
   display: grid;
 }
-.container .header .side-menu .search .trending h2 {
+.container .header .side-menu .search .trending h1 {
   color: black;
-  font-weight: 200;
+  font-weight: 100;
+  font-size: 1.1rem;
 }
 .container .header .side-menu .search .trending .trend {
   display: grid;
@@ -235,9 +236,10 @@ body {
   grid-template-areas: "title icon" "line line" "history history";
   grid-template-columns: 1fr 0.01fr;
 }
-.container .header .side-menu .search .history h2 {
+.container .header .side-menu .search .history h1 {
   color: black;
-  font-weight: 200;
+  font-weight: 100;
+  font-size: 1.1rem;
 }
 .container .header .side-menu .search .history .title {
   grid-area: title;
