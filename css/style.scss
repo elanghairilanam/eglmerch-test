@@ -113,19 +113,20 @@ body{
             right: 0;
             left: 0;
             background-color: white;
-            display: none;
+            display: grid;
             padding: 0 10px;
             padding-top: 5px;
 
             .search{
 
-                display: none;
+                display: grid;
                 grid-template-areas: 
                 "header"
                 "trending"
                 "history"
                 ;
-                height: 40vh;
+                height: min-content;
+                row-gap: 10px;
 
                 .search-header{
                     grid-area: header;
@@ -134,7 +135,6 @@ body{
                     "up"
                     "down"
                     ;
-                    row-gap: 5px;
                     position: relative;
 
                     .up-section{
@@ -233,9 +233,9 @@ body{
 
                 .trending{
                     grid-area: trending;
-
                     display: grid;
-                    
+                    row-gap: 10px;
+
                     h1{
                         color: black;
                         font-size: 1.1rem;
@@ -283,19 +283,15 @@ body{
 
                 .history{
                     grid-area: history;
-
                     display: grid;
-
                     grid-template-areas: 
                     "title icon"
                     "line line"
                     "history history"
                     ;
-
                     align-items: center;
-
                     grid-template-columns: 1fr .01fr;
-
+                    row-gap: 5px;
 
                     h1{
                         color: black;

@@ -99,20 +99,21 @@ body {
   right: 0;
   left: 0;
   background-color: white;
-  display: none;
+  display: grid;
   padding: 0 10px;
   padding-top: 5px;
 }
 .container .header .side-menu .search {
-  display: none;
+  display: grid;
   grid-template-areas: "header" "trending" "history";
-  height: 40vh;
+  height: -moz-min-content;
+  height: min-content;
+  row-gap: 10px;
 }
 .container .header .side-menu .search .search-header {
   grid-area: header;
   display: grid;
   grid-template-areas: "up" "down";
-  row-gap: 5px;
   position: relative;
 }
 .container .header .side-menu .search .search-header .up-section {
@@ -191,6 +192,7 @@ body {
 .container .header .side-menu .search .trending {
   grid-area: trending;
   display: grid;
+  row-gap: 10px;
 }
 .container .header .side-menu .search .trending h1 {
   color: black;
@@ -235,6 +237,7 @@ body {
   grid-template-areas: "title icon" "line line" "history history";
   align-items: center;
   grid-template-columns: 1fr 0.01fr;
+  row-gap: 5px;
 }
 .container .header .side-menu .search .history h1 {
   color: black;
